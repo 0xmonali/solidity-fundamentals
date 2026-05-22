@@ -1,66 +1,13 @@
-## Foundry
+# Solidity Fundamentals
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+A structured, annotated study repository documenting my journey through Solidity — from first principles to advanced patterns. Every contract here is hand-written, commented with my own understanding, and organized to reflect the learning path I followed.
 
-Foundry consists of:
+Built using [Solidity By Example](https://solidity-by-example.org) and the [Cyfrin Updraft](https://updraft.cyfrin.io) curriculum as primary references.
 
-- **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
-- **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
-- **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
-- **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+---
 
-## Documentation
+## Purpose
 
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+This repository is not a collection of copy-pasted examples.  
+Each contract is written and annotated by me as I work through the concepts — with comments explaining *why* the code works, not just *what* it does.  
+The goal is to demonstrate genuine understanding across every layer of the Solidity language.
