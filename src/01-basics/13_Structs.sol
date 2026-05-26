@@ -99,4 +99,8 @@ contract Struct {
         delete people[_index];
     }
 
+   // security concerns:
+   // no index bound check in update/delete can revert
+   //memory or storage - common = confusion
+
 }
