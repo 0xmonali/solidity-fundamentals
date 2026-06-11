@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.35;
+pragma solidity ^0.8.26;
 
 /**
 Inheritance:
@@ -428,6 +428,6 @@ contract Combined is HookChildA {
     function _beforeAction(address caller) internal override{
         require(caller != address(0), "zero address");
         super._beforeAction(caller); //calls HookChildA._beforeAction which calls the HookBase._beforeAction
-        
+
     }
 }
