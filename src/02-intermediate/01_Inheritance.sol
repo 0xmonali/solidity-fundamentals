@@ -240,7 +240,7 @@ contract ShadowParent {
         return balance; // read slot 0
     }
 }
-//Shadowing is disallowed in Solidity 0.6, the following will not compile 
+//Shadowing is disallowed in Solidity 0.6, the following will not compile as it creates ambiguity
 
 /**  
 contract ShadowChild is ShadowParent{
