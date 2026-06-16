@@ -4,6 +4,11 @@ pragma solidity ^0.8.35;
 /**
 Tuple:
 - a fixed-sized, ordered group of values of different types bundled together
+
+NOTE: Tuples cannot be stored directly in the storage. They exist only in:
+      - function return values
+      - stack(local variables)
+      - memory (temporary)
  */
 
 contract Tuple{
