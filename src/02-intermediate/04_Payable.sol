@@ -4,7 +4,8 @@ pragma solidity ^0.8.35;
 /**
 Payable:
 - a keyword that allows a function or address to receive Ether, WITHOUT it, any ETH sent with that call reverts
-
+- payable functions cannot be view or pure : as view/pure never changes the state, while payable accepts the ETH which changes the state 
+  That's permanently written on the blockchain.
  */
 
 // ReentrancyGuard - mutex to block reentrant calls
